@@ -51,7 +51,7 @@ msg = "||>GET DEVICE.TYPE\r\n".encode()
 
 msg = "||>SET DVALID.GS1-FORMAT <AI05>\r\n".encode()
 msg = "||>SET DVALID.TYPE 5\r\n".encode()
-#msg = "||>trigger off\r\n".encode()
+msg = "||>trigger off\r\n".encode()
 ser.write(msg)
 time.sleep(0.5)
 msg = "||>GET DVALID.GS1-FORMAT\r\n".encode()

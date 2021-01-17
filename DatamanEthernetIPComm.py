@@ -3,7 +3,7 @@ Ethernet/IP Communication using the CIP protocol
 
 Documentation: https://python-snap7.readthedocs.io/en/latest/client.html
 '''
-
+'''
 from pycomm3 import CIPDriver
 
 ip = '192.168.105.128'
@@ -22,6 +22,7 @@ msg = device.generic_message(service_code, class_code, instance)
 print(msg)
 device.close()
 
+'''
 
 
 

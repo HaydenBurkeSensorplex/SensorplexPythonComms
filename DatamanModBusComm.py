@@ -1,6 +1,6 @@
 
 #https://pymodbustcp.readthedocs.io/en/latest/
-from pyModbusTCP.client import ModbusClient
+import ModbusClient
 import time
 
 SERVER_HOST = "localhost"
@@ -29,5 +29,5 @@ while True:
         if regs:
             print("reg ad #0 to 9: "+str(regs))
 
-    # sleep 2s befo
+    # sleep 2s befor
 
