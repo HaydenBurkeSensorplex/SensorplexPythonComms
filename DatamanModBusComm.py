@@ -1,6 +1,6 @@
 
 #https://pymodbustcp.readthedocs.io/en/latest/
-import ModbusClient
+from pyModbusTCP.client import ModbusClient
 import time
 
 SERVER_HOST = "localhost"
