@@ -12,12 +12,17 @@ import snap7
 
 ip = '192.168.0.1'
 
+
+#Connect to PLC Server
 plc = snap7.client.Client()
 plc.connect(ip, 0, 0)
 
+#Get curent connection status of plc 
 connection_status = plc.get_connected()
 print("Connection Status: ", connection_status)
 
+#Read PLC database 
 print(plc.db_read(1 ,0, 100))
 
+#disconnect from plc
 plc.plc_stop()

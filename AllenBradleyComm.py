@@ -1,4 +1,5 @@
 from pycomm3 import LogixDriver
+
 '''
 This script shows how to use the pycomm3 library to communicate with a ControlLogix PLC.
 The library can also be used for Ethernet/IP communication using the CIP protocol, for examples of this 
@@ -6,7 +7,6 @@ see DatamanEthernetIPComm.py
 
 Documentation 
 https://pycomm3.readthedocs.io/en/latest/usage.html
-
 
 '''
 
