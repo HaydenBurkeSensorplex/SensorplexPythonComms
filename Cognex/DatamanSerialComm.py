@@ -12,12 +12,14 @@ import time
 #Initialise new serial object
 #This can be any device that communicates over serial port, just ensure
 #correct port and buad rate are supplied
+
 ser = serial.Serial(
     port='COM3',
     baudrate=9600,
     timeout=5
 )
 
+#Checks if device is connected via serial 
 if ser.isOpen():
     print("Connected to Device")
 else:
@@ -34,7 +36,7 @@ msg = "||>GET DEVICE.TYPE\r\n".encode()
 msg = "||>SET DVALID.GS1-FORMAT <AI05>\r\n".encode()
 msg = "||>SET DVALID.TYPE 5\r\n".encode()
 msg = "||>trigger off\r\n".encode()
-w
+
 #Write serial message to serial port
 ser.write(msg)
 time.sleep(0.5)
@@ -46,9 +48,12 @@ print(response.decode('utf-8'))
 
 time.sleep(1)
 
-count = 0
+##################
+# Sample Program #
+##################
 
 #Keep reading serial port and prints any results when they occur
+count = 0
 while True:
     response = ser.read(ser.in_waiting)
     if response:
