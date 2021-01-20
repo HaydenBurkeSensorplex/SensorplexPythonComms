@@ -3,6 +3,18 @@
 The following contains different scripts for communicating over different protocols and devices using an assortment of 
 python modules.
 
+Each line explains the basics of the library and python code with the intention of show those unfamiliar with python 
+or the modules how they operate.
+
+For related documentation, see each script for links
+
+## Installing Required Libraries
+To install all required libraries for the sample scripts run the following command from a command console opened at file location:
+
+``` pip install -r requirements.txt ```
+
+This will install all libraries found in the txt file.
+
 ## Current Communication Protocols 
 - Serial (UART, MODBUS, RS232, I2C, SPI)
 - OPCUA
