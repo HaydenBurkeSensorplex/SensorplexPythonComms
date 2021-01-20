@@ -1,5 +1,7 @@
 # Sensorplex Communication Scripts
 
+![alt text](https://sensorplex.files.wordpress.com/2018/07/cropped-sensorplex-square-logo.jpg?w=240)
+
 The following contains different scripts for communicating over different protocols and devices using an assortment of 
 python modules.
 
