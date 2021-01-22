@@ -8,7 +8,7 @@ DIState = ctypes.c_int(0)
 Port = ctypes.c_int(0)
 
 #The following code shows how to call the sdk library in the python
-# Load C library
+# Load C library from .dll
 dll = ctypes.windll.LoadLibrary('C:\Program Files\ADLINK\PCIe-E13D\Library\PCI-Dask64.dll')
 
 # Register device
