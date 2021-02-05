@@ -18,7 +18,7 @@ with LogixDriver('192.168.10.111') as plc:
     #######################                    
     # Get Tag Information #
     #######################
-
+    
     #Gets a list of all tags currently on plc, and information related to them.
     tag_list = plc.get_tag_list()
     print(f"Tag List: {0}", tag_list)
